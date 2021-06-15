@@ -1,0 +1,409 @@
+/*============================================
+
+[Table of content]
+
+1. Extra large container
+2. Large devices (less than 1200px)
+3. Large tablets (less than  992px)
+4. Medium devices (less than  768px)
+5. Small devices (less than  576px)
+
+============================================*/
+
+
+/* 1. Extra large container size */
+@media (min-width: 1220px) {
+    .container {
+        max-width: 1200px; /* For 1200px container width, content will be 1170px wide */
+    }
+}
+@media (max-width: 1219.98px) {
+    .banner-content h2 {
+        font-size: 1.4rem;
+    }
+    .swiper-slide-active .single-pricing-plan {
+        border: 1px solid #e0e1e0;
+    }
+    .single-pricing-plan {
+        border: none;
+    }
+}
+
+/* 2. Large devices (less than 1200px) */
+@media (max-width: 1199.98px) {
+    .banner-content h2 {
+        font-size: 1.1rem;
+    }
+    .client-area .btn {
+        padding: 0.6rem 1rem;
+    }
+    .header-menu > ul > li + li {
+        margin-left: 1.5rem;
+    }
+    .pricing-features li {
+        font-size: 0.875rem;
+    }
+    .image-hover-content .list-inline:not(.text-right) > li:not(:last-child) {
+        margin-right: 0.3rem;
+    }
+    .subscribe-submit .btn {
+        padding: 0.6rem 1.3rem;
+    }
+    .single-widget {
+        padding: 15px;
+    }
+    .follow-us a {
+        font-size: 0.625rem;
+    }
+}
+
+/* 3. Large tablets (less than  992px) */
+@media (max-width: 991.98px) {
+    .pt-7,
+    .pt-5 {
+        padding-top: 4rem !important;
+    }
+    .pb-7,
+    .pb-5 {
+        padding-bottom: 4rem !important;
+    }
+    .pb-5-5 {
+        padding-bottom: 2.125rem !important;
+    }
+    .main-header .row {
+        position: relative;
+    }
+    .main-header .row > div:nth-child(2) {
+        position: static;
+    }
+    .header-menu ul ul li a:hover:before, 
+    .header-menu ul ul li.active a:before, 
+    .header-menu ul ul li:hover > a:before {
+        opacity: 0;
+    }
+    .header-menu > ul > li {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left: 0px !important;
+    }
+    .header-menu > ul > li:first-child {
+        border-top: 0px !important;
+    }
+    .header-menu ul li a {
+        color: #1b435d;
+        padding: 12px 15px !important;
+    }
+    .header-menu ul ul li a {
+        padding-left: 30px !important;
+        width: auto;
+    }
+    .header-menu {
+        text-align: right;
+        position: initial;
+    }
+    .header-menu > ul {
+        position: absolute !important;
+        top: 60px !important;
+        left: 15px !important;
+        width: calc(100% - 30px) !important;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-height: 350px;
+        overflow-y: auto;
+    }
+    .header-menu ul, 
+    .header-menu ul ul, 
+    .header-menu ul ul ul, 
+    .header-menu > ul, 
+    .header-menu.align-center > ul, 
+    .header-menu > ul > li > ul, 
+    .header-menu > ul > li:hover > ul, 
+    .header-menu ul ul li:hover > ul {
+        position: relative;
+        left: 0;
+        right: auto;
+        top: 0;
+        width: 100%;
+        display: none;
+        padding: 0;
+        opacity: 1;
+        text-align: left;
+        z-index: 99999;
+    }
+    .header-menu ul li {
+        width: 100%;
+        border-top: 1px solid rgba(120, 120, 120, 0.2);
+    }
+    .header-menu > ul > li > a, 
+    .header-menu ul ul li a, 
+    .header-menu ul ul li:first-child > a, 
+    .header-menu ul ul li:last-child > a {
+        border-radius: 0;
+        box-shadow: none;
+        background: none;
+    }
+    .header-menu ul li a svg{
+        display: none;
+    }
+    .header-menu ul ul ul li a {
+        color: #000;
+        padding-left: 45px !important;
+    }
+    .header-menu #menu-button {
+        color: #7cd273;
+        font-size: 28px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .header-menu .submenu-button {
+        position: absolute;
+        right: 0;
+        display: block;
+        width: 50px;
+        height: 40px;
+        border-left: 1px solid rgba(120, 120, 120, 0.2);
+        z-index: 10;
+        cursor: pointer;
+    }
+    .header-menu ul ul .submenu-button {
+        height: 44px;
+    }
+    .header-menu .submenu-button:before {
+        content: '';
+        position: absolute;
+        right: 22.5px;
+        top: 18px;
+        display: block;
+        width: 0;
+        height: 0;
+        border: 4px solid transparent;
+        border-top-color: #1b435d;
+        z-index: 99;
+    }
+    .header-menu .submenu-opened:before {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+        top: 14px;
+    }
+    .header-menu ul ul .submenu-button:before {
+        top: 19.5px;
+    }
+    .header-menu ul ul .submenu-button.submenu-opened:before {
+        top: 15.5px;
+    }
+    .header-menu #menu-button.menu-opened:before, 
+    .header-menu .submenu-button.submenu-opened:before {
+        border-top-color: #1b435d;
+    }
+    .header-menu > ul > li:not(.active):hover > a,
+    .header-menu > ul > li:not(.active) > a:hover {
+        color: #1b435d;
+    }
+    .header-menu > ul > li > ul,
+    .header-menu ul ul ul {
+        box-shadow: none;
+        border-bottom: 0;
+    }
+    .header-menu > ul > li > ul:before,
+    .header-menu ul ul ul:before {
+        display: none;
+    }
+    .header-menu ul ul ul li:first-child {
+        padding-top: 0;
+    }
+    .header-menu ul ul ul li:last-child {
+        padding-bottom: 0;
+    }
+    .header-menu ul ul li:hover > a, 
+    .header-menu ul ul li > a:hover {
+        color: #757575;
+    }
+    .sticking .header-menu > ul > li:hover:not(.active) > a {
+        color: #1b435d;
+    }
+    .header-menu ul ul ul:after {
+        display: none;
+    }
+    .header-menu > ul > li > a:after, 
+    .header-menu > ul > li.active > a:after, 
+    .header-menu > ul > li:hover > a:after {
+        display: none;
+    }
+    .services-wrap {
+        margin: -19rem auto 0 auto;
+    }
+    .pricing-features li {
+        width: 33.3333%;
+    }
+    .data-centers li {
+        width: 33.3333%;
+        margin-bottom: 0.5rem;
+    }
+    .subscribe-submit span {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    .servers {
+        padding-bottom: 4rem;
+    }
+    .why-us {
+        margin-bottom: 2rem;
+    }
+    .single-step {
+        padding-right: 0;
+    }
+    .single-step svg {
+        display: none;
+    }
+    .follow-us a span {
+        display: none;
+    }
+    .contact-form-wrap {
+        padding: 20px;
+    }
+}
+
+/* 4. Medium devices (less than  768px) */
+@media (max-width: 767.98px) {
+    .header-info { 
+        text-align: center;
+        margin: 0;
+    }
+    .header-menu > ul {
+        top: 56px !important;
+    }
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+    .single-feature h3 {
+        margin: 1rem 0;
+    }
+    .pricing-features li,
+    .data-centers li {
+        width: 50%;
+    }
+    .pricing-features h3 {
+        margin: 2rem 0;
+    }
+    .single-service {
+        margin-bottom: 2.5rem;
+    }
+    .pricing-features {
+        margin-bottom: 1rem;
+    }
+    .our-clients {
+        text-align: center;
+    }
+    .our-clients li {
+        display: inline-block;
+    }
+    .our-clients li + li {
+        margin-left: 13px;
+    }
+    .footer-info, .footer-posts, .footer-newsletter {
+        margin-bottom: 2.5rem;
+    }
+    .subscribe-submit span {
+        margin-top: 0.25rem;
+        margin-left: 0.625rem;
+    }
+    .single-footer-post:not(:last-of-type) {
+        padding-bottom: 2.2rem;
+    }
+    .copyright, .footer-menu {
+        text-align: center;
+    }
+    .footer-menu {
+        margin-top: 1rem;
+    }
+    .single-about-us-info {
+        margin-top: 2rem;
+    }
+    .why-us ul li {
+        font-size: 0.875rem;
+        margin-bottom: .4rem;
+    }
+    .follow-us a span {
+        display: block;
+    }
+    .post-details {
+        padding: 15px;
+    }
+    .queries-wrap {
+        margin-bottom: 0;
+    }
+}
+
+/* 5. Small devices (less than  576px) */
+@media (max-width: 575.98px) {
+    .main-header {
+        padding: 0.5rem;
+    }
+    .header-menu > ul{
+        top: 52px !important;
+    }
+    .header-info {
+        padding: .5rem 0;
+    }
+    .header-info li {
+        padding: 0;
+    }
+    .header-info li:not(:first-child) {
+        padding-left: 0;
+    }
+    .header-info li:not(:first-child):before {
+        display: none;
+    }
+    .banner-content h2 {
+        height: 42px;
+    }
+    .services-wrap {
+        margin: -16rem auto 0 auto;
+    }
+    .single-service {
+        margin-bottom: 2rem;
+    }
+    .pricing-features li,
+    .data-centers li {
+        float: none;
+        width: 100%;
+        margin-bottom: 0.3rem;
+    }
+    .apps-list img {
+        max-width: 135px;
+    }
+    .our-clients li {
+        margin-top: 7.5px;
+        margin-bottom: 7.5px;
+    }
+    .single-footer-post:not(:last-of-type) {
+        padding-bottom: 1.4rem;
+    }
+    .footer-newsletter .btn {
+        padding: 0.6rem 1rem;
+    }
+    .world-map svg {
+        right: -155px;
+    }
+    .page-title h1 {
+        font-size: 2rem;
+    }
+    .post-content blockquote {
+        padding-right: 0;
+    }
+    .post-content blockquote span {
+        display: none;
+    }
+    .social-share li a {
+        width: 38px;
+    }
+    .prev-next span {
+        display: none;
+    }
+    .comment-content a {
+        position: static;
+    }
+    .sub-comment {
+        padding-left: 30px;
+    }
+}

@@ -1,0 +1,43 @@
+.good{
+    width: 100%;
+    background: black;
+    transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: relative;
+}
+
+.good_img {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    float: left;
+    padding:10px;
+}
+.good_info {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+    padding:10px;
+}
+.good_name {
+  color: black;
+  font-size: 20px;
+}
+.shop_name {
+  color: green;
+  font-size: 18px;
+}
+.good_price {
+  color: red;
+  font-size: 30px;
+}
+.col-lg-6 {
+    background: #F5FFFA;
+    width: 600px;
+    height: 320px;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 2px;
+}
