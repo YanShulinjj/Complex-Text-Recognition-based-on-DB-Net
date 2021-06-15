@@ -45,6 +45,7 @@
 
 #### 鸣谢
 
+- 人生导师 —— 朱小飞
 - [DB-net-Keras]([xuannianz/DifferentiableBinarization: DB (Real-time Scene Text Detection with Differentiable Binarization) implementation in Keras and Tensorflow (github.com)](https://github.com/xuannianz/DifferentiableBinarization))
 
 - [DB-net-官方]([MhLiao/DB: A PyTorch implementation of "Real-time Scene Text Detection with Differentiable Binarization". (github.com)](https://github.com/MhLiao/DB))
